@@ -21,7 +21,7 @@
    
    5.意味的チャンク化
    
-  の各手法を実装した。"ai_engineering_03_L4_for_homework_1.ipynb"
+  の各手法を実装した。"ai_engineering_03_L4_for_homework_A.ipynb"
 
 ○ 結果の分析と考察
 
