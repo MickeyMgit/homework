@@ -35,26 +35,19 @@
   3. パラメーターの調整
  」
 
- 2.講義内容をソースとして活用 (RAG導入)
+　◆ベースモデルがどの程度知識を持っているか確かめると、内容が不明な点がある。
 
- response = 「
- 　LLM（Large Language Model）におけるChinchilla scaling lawsは、Chinchillaという経験則に基づいて、パラメータ数、token数、計算量の関係を規定するスケール則です。
-　Chinchilla scaling lawsは、LLMの学習に必要な計算量を、パラメータ数とtoken数の関係で規定することで、計算量を予測することができます。具体的には、Chinchilla scaling lawsは、パラメータ数とtoken数の関係を、以下の式で規定します。
-* パラメータ数：P
-* token数：T
-* 計算量：C
-この式で、計算量Cは、パラメータ数Pとtoken数Tの積に比例することが示されます。すなわち、パラメータ数Pを増やすことで、token数Tを増やすことで、計算量Cを減らすことができます。
-　Chinchilla scaling lawsは、LLMの学習に必要な計算量を規定することで、計算量を予測することができます。また、Chinchilla scaling lawsは、LLMのパラ
- 」
-
- 3.講義内容をソースとして活用：改善版RAG実装
+ 2.講義内容をソースとして活用：改善版RAG実装
  
  response = 「
  　LLM（Large Language Model）におけるChinchilla scaling lawsは、ChinChillaという経験則に基づくスケーリング則です。このスケーリング則は、計算量を固定した状態で、パラメータ数とデータセットサイズを変化させることで、LLMの性能を予測するために使用されます。
 　このスケーリング則は、ChinChillaの経験則に基づいており、計算量を固定した状態で、パラメータ数とデータセットサイズを変化させることで、LLMの性能を予測するために使用されます。このスケーリング則は、LLMの巨大化に伴う計算量の増加を考慮し、パラメータ数とデータセットサイズを適切に設定することで、LLMの性能を向上させることができます。
 」
 
-4.文脈を考慮したチャンク化の導入
+　◆講義内容をソースとして活用すると、どういう条件で成立するかといった内容が含まれるようになった。
+
+
+3.文脈を考慮したチャンク化の導入
 
 response = 「
 LLM（Large Language Model）におけるChinchilla scaling lawsは、ChinChilla則という経験則に基づくスケーリング則です。この則は、巨大なモデルにおいて、パラメータ数、token数、計算量の関係を捉えるために用いられます。
@@ -64,7 +57,9 @@ ChinChilla則は、Chinchillaというモデル名に由来し、ChinChilla-Opti
 この則は、LLMの巨大化に際して、パラメータ数、token数、計算量の関係を捉えるために重要な指標となります。ChinChilla則は、実際のLLMの巨大化において、パラメータ数、token数、計算量の関係を捉えるために用いられます。
 」
 
-5.Rerankによる情報品質の向上
+　◆文脈を考慮したチャンク化の導入すると、具体的な数値例を含むようになったが、要約としての質が落ちるようになった。
+
+4.Rerankによる情報品質の向上
 
 response = 「
 LLM（Large Language Model）におけるChinchilla scaling lawsは、ChinChillaと呼ばれる経験則に基づくスケール則です。この経験則は、巨大なモデルや巨大なトークンに対する学習の計算量を予測するために使用されます。
@@ -76,7 +71,10 @@ LLM（Large Language Model）におけるChinchilla scaling lawsは、ChinChilla
 また、この経験則は、LLMの性能を向上させるために使用されます。例えば、パラメータ数を20倍にすると、トークン数も20倍になるため、LLMの性能も向上することができます。
 」
 
-6.意味的チャンク化
+　◆Rerankによる情報品質の向上すると、具体的な数値例を含み、かつ要約の質が向上した。
+ 
+ 
+5.意味的チャンク化
 
 response = 「
 
@@ -90,6 +88,7 @@ LLM（Large Language Model）におけるChinchilla scaling lawsは、ChinChilla
 
 」
 
+　◆意味的チャンク化した結果、Rerank時と同様な結果となった。
  
 ○ 発展的な改善案(任意)
 
