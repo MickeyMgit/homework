@@ -28,7 +28,18 @@
   2. モデルのスケーリング：LLMのモデルサイズを、モデルサイズの増加に対応するために使用します。
   3. パラメーターの調整
  」
- 
+
+ 2.講義内容をソースとして活用 (RAG導入)
+
+ response = 「
+ 　LLM（Large Language Model）におけるChinchilla scaling lawsは、Chinchillaという経験則に基づいて、パラメータ数、token数、計算量の関係を規定するスケール則です。
+　Chinchilla scaling lawsは、LLMの学習に必要な計算量を、パラメータ数とtoken数の関係で規定することで、計算量を予測することができます。具体的には、Chinchilla scaling lawsは、パラメータ数とtoken数の関係を、以下の式で規定します。
+* パラメータ数：P
+* token数：T
+* 計算量：C
+この式で、計算量Cは、パラメータ数Pとtoken数Tの積に比例することが示されます。すなわち、パラメータ数Pを増やすことで、token数Tを増やすことで、計算量Cを減らすことができます。
+　Chinchilla scaling lawsは、LLMの学習に必要な計算量を規定することで、計算量を予測することができます。また、Chinchilla scaling lawsは、LLMのパラ
+ 」
 ○ 発展的な改善案(任意)
 
 
