@@ -1,5 +1,5 @@
 
-質問(A)　question = "LLMにおけるChinchilla scaling lawsとは？"
+◎質問(A)　question = "LLMにおけるChinchilla scaling lawsとは？"
 
 ○ 質問設計の観点と意図
 
@@ -92,7 +92,7 @@ LLM（Large Language Model）におけるChinchilla scaling lawsは、ChinChilla
 
 
 
-質問(B)　question = "LLMにおけるGrokkingとは？"
+◎質問(B)　question = "LLMにおけるGrokkingとは？"
 
 ○ 質問設計の観点と意図
   演習における質問である、"LLMにおけるInference Time Scalingとは？"と比較するため、
